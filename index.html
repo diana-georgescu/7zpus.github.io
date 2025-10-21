@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-ZPUs - Progetto Ingegneria del Software</title>
+    <style>
+        /* Reset base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #111; /* sfondo nero */
+            color: #fff; /* colore testo di base bianco */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 3px solid #6a0dad; /* bordo viola */
+        }
+
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #6a0dad; /* viola */
+        }
+
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ff7f; /* verde */
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #6a0dad; /* viola */
+            margin-bottom: 20px;
+        }
+
+        ul.team-members {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        ul.team-members li {
+            background-color: #222;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        ul.team-members li:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info a {
+            color: #00ff7f; /* verde */
+            text-decoration: none;
+        }
+
+        .verbali {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .verbali a {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .verbali a:hover {
+            background-color: #6a0dad;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #6a0dad;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 600px){
+            ul.team-members {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo 7-ZPUs">
+    <h1>7-ZPUs</h1>
+</header>
+
+<nav>
+    <a href="#team">Team</a>
+    <a href="#contact">Contatti</a>
+    <a href="#verbali-interni">Verbali Interni</a>
+    <a href="#verbali-esterni">Verbali Esterni</a>
+</nav>
+
+<section id="team">
+    <h2>Team 7-ZPUs</h2>
+    <ul class="team-members">
+        <li>Partecipante 1</li>
+        <li>Partecipante 2</li>
+        <li>Partecipante 3</li>
+        <li>Partecipante 4</li>
+        <li>Partecipante 5</li>
+        <li>Partecipante 6</li>
+        <li>Partecipante 7</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contatti</h2>
+    <p class="contact-info">
+        Email: <a href="mailto:team7-zpus@example.com">team7-zpus@example.com</a>
+    </p>
+</section>
+
+<section id="verbali-interni">
+    <h2>Verbali Interni</h2>
+    <div class="verbali">
+        <a href="#">Verbale Interno 1</a>
+        <a href="#">Verbale Interno 2</a>
+    </div>
+</section>
+
+<section id="verbali-esterni">
+    <h2>Verbali Esterni</h2>
+    <div class="verbali">
+        <a href="#">Verbale Esterno 1</a>
+        <a href="#">Verbale Esterno 2</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Team 7-ZPUs | Progetto Ingegneria del Software
+</footer>
+
+</body>
+</html>
