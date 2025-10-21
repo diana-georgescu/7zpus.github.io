@@ -125,6 +125,45 @@
                 flex-direction: column;
             }
         }
+
+details {
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 0;
+    list-style: none;
+    outline: none;
+}
+
+summary:hover {
+    color: #6a0dad; /* viola */
+}
+
+.verbali-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.verbali-list a {
+    color: #00ff7f; /* verde */
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.verbali-list a:hover {
+    text-decoration: underline;
+}
+
+        
     </style>
 </head>
 <body>
@@ -157,25 +196,38 @@
 <section id="contact">
     <h2>Contatti</h2>
     <p class="contact-info">
-        Email: <a href="mailto:team7-zpus@example.com">team7-zpus@example.com</a>
+        Email: <a href="mailto:team7-zpus@example.com">7zpus@gmail.com</a>
     </p>
 </section>
 
 <section id="verbali-interni">
     <h2>Verbali Interni</h2>
-    <div class="verbali">
-        <a href="#">Verbale Interno 1</a>
-        <a href="#">Verbale Interno 2</a>
-    </div>
+
+    <details>
+        <summary>Mostra/Nascondi Verbali Interni</summary>
+        <div class="verbali-list">
+            <a href="#">Verbale Interno 1</a>
+            <a href="#">Verbale Interno 2</a>
+            <a href="#">Verbale Interno 3</a>
+        </div>
+    </details>
 </section>
 
 <section id="verbali-esterni">
     <h2>Verbali Esterni</h2>
-    <div class="verbali">
-        <a href="#">Verbale Esterno 1</a>
-        <a href="#">Verbale Esterno 2</a>
-    </div>
+
+    <details>
+        <summary>Mostra/Nascondi Verbali Esterni</summary>
+        <div class="verbali-list">
+            <a href="#">Verbale Esterno 1</a>
+            <a href="#">Verbale Esterno 2</a>
+            <a href="#">Verbale Esterno 3</a>
+        </div>
+    </details>
 </section>
+    
+
+
 
 <footer>
     &copy; 2025 Team 7-ZPUs | Progetto Ingegneria del Software
@@ -183,3 +235,4 @@
 
 </body>
 </html>
+
